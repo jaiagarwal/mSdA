@@ -1,5 +1,4 @@
 # Marginalised SDA for Nonlinear Respresentations
-### Overview
 Theano implementation of the paper [Marginalized Denoising Auto-encoders for Nonlinear Representations][main-paper] (ICML 2014). Also extended it to stack multiple layers (*mSDA*) of *mDA*s for classification tasks.
 
 Other denoising techniques have longer training time and high computational demands. *mSDA* addresses the problem by implicitly denoising the raw input via Marginalization and, thus, is effectively trained on *infinitely* many training samples without explicitly corrupting the data. There are similar approaches but they have non-linearity or latent representations stripped away. This addresses the disadvantages of those approaches, and hence is a generalization of those works.
@@ -31,8 +30,8 @@ The the error rates for the best results on the *basic* dataset are:
 - **Valdition Set**: 2.70 %
 - **Test Error**: 3.33%
 
-Resulted filters of first layer during training:
-![Image Filter Gif](https://media.giphy.com/media/8cpfWLpRaZG0dWwIw7/giphy.gif)
+Resulted filters of first layer during training:  
+![Image Filter Gif](https://raw.githubusercontent.com/jaiagarwal/mSdA/master/image-filters.gif)  
 The filters are continuously improving and learning specialized feature extractors.
 
 ### References
